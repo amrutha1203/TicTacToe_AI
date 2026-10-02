@@ -1,0 +1,258 @@
+/* ----------------------------- 
+   Page background 
+----------------------------- */
+
+html,
+body,
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background-color: #1b1b2f;
+}
+
+
+/* ----------------------------- 
+   Header 
+----------------------------- */
+
+[data-testid="stHeader"] {
+    background-color: #1b1b2f;
+}
+
+
+/* ----------------------------- 
+   Main container 
+----------------------------- */
+
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+/* ----------------------------- 
+   Title 
+----------------------------- */
+
+.stApp .game-title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+
+    color: #f4f1de;
+
+    text-align: center;
+}
+
+
+/* ----------------------------- 
+   Player text 
+----------------------------- */
+
+.stApp .players {
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    color: #ffffff;
+
+    margin-bottom: 18px;
+}
+
+
+/* ----------------------------- 
+   Game message 
+----------------------------- */
+
+.stApp .game-message {
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+
+/* ----------------------------- 
+   Board 
+----------------------------- */
+
+[data-testid="stHorizontalBlock"] {
+    width: 300px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 8px;
+}
+
+
+/* ----------------------------- 
+   Columns 
+----------------------------- */
+
+[data-testid="column"] {
+    padding: 0;
+}
+
+
+/* ----------------------------- 
+   Empty board cells 
+----------------------------- */
+
+[data-testid="stButton"] > button {
+    width: 95px;
+    height: 95px;
+
+    min-height: 95px;
+
+    padding: 0;
+
+    margin: 0 0 8px 0;
+
+    background-color: #d9e2ec;
+
+    border: 2px solid #a8b8c8;
+
+    border-radius: 10px;
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ----------------------------- 
+   Empty cell hover 
+----------------------------- */
+
+[data-testid="stButton"] > button:hover {
+    background-color: #c8d6e5;
+
+    border-color: #a8b8c8;
+
+    transform: scale(1.03);
+}
+
+
+/* ----------------------------- 
+   Occupied cells 
+----------------------------- */
+
+.cell {
+    width: 95px;
+    height: 95px;
+
+    margin-bottom: 8px;
+
+    background-color: #d9e2ec;
+
+    border: 2px solid #a8b8c8;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 40px;
+
+    font-weight: bold;
+}
+
+
+/* ----------------------------- 
+   X 
+----------------------------- */
+
+.cell.X {
+    color: #167d9a;
+}
+
+
+/* ----------------------------- 
+   O 
+----------------------------- */
+
+.cell.O {
+    color: #c44569;
+}
+
+
+/* ----------------------------- 
+   Restart container 
+----------------------------- */
+
+.st-key-restart-container {
+    width: 300px;
+
+    margin: 15px auto 0 auto;
+
+    text-align: center;
+}
+
+
+/* ----------------------------- 
+   Restart button container 
+----------------------------- */
+
+.st-key-restart-container [data-testid="stButton"] {
+    width: 90px;
+
+    margin: 0 auto;
+}
+
+
+/* ----------------------------- 
+   Small Restart button 
+----------------------------- */
+
+.st-key-restart-container [data-testid="stButton"] > button {
+    width: 90px;
+    height: 38px;
+
+    min-height: 38px;
+
+    padding: 6px 12px;
+
+    margin: 0 auto;
+
+    background-color: #d9e2ec;
+
+    color: #1b1b2f;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* ----------------------------- 
+   Restart hover 
+----------------------------- */
+
+.st-key-restart-container [data-testid="stButton"] > button:hover {
+    background-color: #c8d6e5;
+
+    color: #1b1b2f;
+}

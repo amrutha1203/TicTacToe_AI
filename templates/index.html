@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Tic Tac Toe AI</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <h1>TIC TAC TOE</h1>
+
+    <p>You = X || AI = O</p>
+
+    <h3>{{ message }}</h3>
+
+
+    <form method="POST">
+
+        <div class="board">
+
+            {% for i in range(9) %}
+
+                {% if board[i] == "" %}
+
+                    <button
+                        type="submit"
+                        name="position"
+                        value="{{ i }}"
+                    >
+                    </button>
+
+                {% else %}
+
+                    <button
+                        type="button"
+                        class="{{ board[i] }}"
+                    >
+                        {{ board[i] }}
+                    </button>
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+    </form>
+
+
+    <form method="POST">
+
+        <button
+            class="restart"
+            type="submit"
+            name="restart"
+        >
+            Restart
+        </button>
+
+    </form>
+
+</body>
+
+</html>
